@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+        
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light justify-content-center">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+      </nav>
+      
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="search col-2">
+          <form>
+            <label for="cityInput">City</label>
+            <input type="text" class="form-control" id="cityInput" placeholder="Orlando">
+            <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+          </form>
+          <ul class="cityList input-group"></ul>
+        </div>
+        <div class="col-10">
+          <div class="today">
+            <span class="Date">Day</span><br />
+            <span class="temp">Temp</span><br />
+            <span class="hum">hum</span><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="forecast">
+       
+        
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script defer src="assets/script.js"></script>
+  </body>
+</html>
