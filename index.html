@@ -22,8 +22,8 @@
     </header>
 
     <div class="container">
-      <div class="row">
-        <div class="search col-2">
+      <div class="row" id="topDisplay">
+        <div class="search col-3">
           <form>
             <label for="cityInput">City</label>
             <input type="text" class="form-control" id="cityInput" placeholder="Orlando">
@@ -31,19 +31,13 @@
           </form>
           <ul class="cityList input-group"></ul>
         </div>
-        <div class="col-10">
-          <div class="today">
-            <span class="Date">Day</span><br />
-            <span class="temp">Temp</span><br />
-            <span class="hum">hum</span><br />
-          </div>
+        <div class="col-9">
+          <div class="today" id="currentWeather"></div>
         </div>
       </div>
 
-      <div class="row" id="forecast">
-       
-        
-      </div>
+      <div class="row" id="forecast"></div>     
+      
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
