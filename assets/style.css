@@ -7,3 +7,27 @@
     margin-top: 2rem;
     
 }
+
+body{
+    background-color: bisque;
+}
+
+#forecast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(125, 155, 202);
+    font-weight: bolder;
+}
+
+label{
+    font-weight: bolder;
+}

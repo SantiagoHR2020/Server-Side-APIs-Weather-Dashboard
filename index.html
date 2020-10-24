@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather Dashboard</title>
         
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/style.css" />
 
   </head>
-  <body>
+  <body> 
     <header>
       <nav class="navbar navbar-light bg-light justify-content-center">
         <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
@@ -25,11 +25,11 @@
       <div class="row" id="topDisplay">
         <div class="search col-3">
           <form>
-            <label for="cityInput">City</label>
-            <input type="text" class="form-control" id="cityInput" placeholder="Orlando">
-            <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+            <label for="cityInput" class="mb-3">City Search:</label>
+            <input type="text" class="form-control mb-3" id="cityInput" placeholder="Orlando">
+            <button type="submit" class="btn btn-primary mb-3" id="searchBtn">Search</button>
           </form>
-          <ul class="cityList input-group"></ul>
+          <div class="cityList input-group"></div>
         </div>
         <div class="col-9">
           <div class="today" id="currentWeather"></div>
