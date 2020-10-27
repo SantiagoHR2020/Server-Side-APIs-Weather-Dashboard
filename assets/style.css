@@ -12,11 +12,11 @@ body{
     background-color: bisque;
 }
 
-#forecast{
+/* #forecast{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .card{
     border-radius: 1rem;
@@ -26,6 +26,7 @@ body{
     justify-content: center;
     background-color: rgb(125, 155, 202);
     font-weight: bolder;
+    width: 100%;
 }
 
 label{

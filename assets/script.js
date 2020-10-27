@@ -37,8 +37,9 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       var currentDay = response.dt;
+      $("#currentWeather").empty()
 
-      var card = $("<div>").addClass("card col-sm-12 col-md-5");
+      var card = $("<div>").addClass("card text-white bg-dark");
       var cardBody = $("<div>").addClass("card-body currentWeather");
       var cardTitle = $("<div>")
         .addClass("card-title")
@@ -58,8 +59,7 @@ $(document).ready(function () {
       );
 
       $("#currentWeather")
-        .empty()
-        .append(
+       .append(
           card.append(
             cardBody
               .append(cardTitle)
@@ -84,7 +84,7 @@ $(document).ready(function () {
       for (var i = 1; i < 6; i++) {
         var currentDay = responseF.daily[i];
 
-        var card = $("<div>").addClass("card col-sm-8 col-md-6 col-lg-2");
+        var card = $("<div>").addClass("card text-white bg-dark col-sm-8 col-md-6 col-lg-2");
         var cardBody = $("<div>").addClass("card-body");
         var cardTitle = $("<div>")
           .addClass("card-title")
