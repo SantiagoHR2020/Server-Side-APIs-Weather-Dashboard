@@ -37,6 +37,7 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       var currentDay = response.dt;
+      console.log(response)
       $("#currentWeather").empty()
 
       var card = $("<div>").addClass("card text-white bg-dark");
@@ -48,6 +49,7 @@ $(document).ready(function () {
       var cityDiv = $("<div>")
         .addClass("card-text")
         .text("City: " + city);
+      var iconDiv = $(`<img src=" https://openweathermap.org/img/wn/${response.weather[0].icon}.png"></img>`);
       var tempDiv = $("<div>")
         .addClass("card-text")
         .text("Temperature: " + Math.floor(response.main.temp) + "°F");
@@ -63,7 +65,7 @@ $(document).ready(function () {
           card.append(
             cardBody
               .append(cardTitle)
-              .append(cityDiv, tempDiv, humDiv, windSpeed)
+              .append(cityDiv, iconDiv, tempDiv, humDiv, windSpeed)
           )
         );
 
@@ -89,6 +91,7 @@ $(document).ready(function () {
         var cardTitle = $("<div>")
           .addClass("card-title")
           .text(moment.unix(currentDay.dt).format("MMM Do"));
+        var iconDiv = $(`<img src=" https://openweathermap.org/img/wn/${currentDay.weather[0].icon}.png"></img>`);
 
         var tempDiv = $("<div>")
           .addClass("card-text")
@@ -102,7 +105,7 @@ $(document).ready(function () {
           card.append(
             cardBody
               .append(cardTitle)
-              .append(tempDiv, humDiv, uviC.append(newSpan))
+              .append(iconDiv, tempDiv, humDiv, uviC.append(newSpan))
           )
         );
 
