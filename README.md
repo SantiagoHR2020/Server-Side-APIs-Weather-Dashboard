@@ -8,7 +8,7 @@
 
 https://santiagohr2020.github.io/06-Server-Side-APIs-Weather-Dashboard/
 
-# descrition
+# Descrition
 
 The application retrieves the weather for the current day and a five day forecast and keeps a history of searches. 
 
