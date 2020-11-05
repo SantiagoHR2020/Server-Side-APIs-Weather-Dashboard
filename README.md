@@ -18,6 +18,6 @@ HTML5, CSS, Bootstrap, JavaScript, JQuary, and moment.js, openweathermap API
 
 # Site Images
 
-# Screenshot
+## Screenshot
 
 ![screenshot of the start page](assets/images/screenshot1.PNG)
