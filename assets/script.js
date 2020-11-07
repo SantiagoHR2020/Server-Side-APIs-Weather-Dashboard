@@ -1,13 +1,17 @@
 $(document).ready(function () {
   var cityHistoryArray = [];
   var storeCities = localStorage.getItem("cities");
-
+  var APIKey = "485a30f7b8cebea0111006986b00bf18";
+  
   if (storeCities) {
     cityHistoryArray = JSON.parse(storeCities);
   }
   console.log(cityHistoryArray);
+  console.log(cityHistoryArray.length);
   
   cityHistory();
+
+  weatherGet(cityHistoryArray[cityHistoryArray.length-1])
 
   $("#searchBtn").on("click", function (event) {
     event.preventDefault();
@@ -23,7 +27,6 @@ $(document).ready(function () {
     weatherGet(city);
   });
 
-  var APIKey = "485a30f7b8cebea0111006986b00bf18";
 
   function weatherGet(city) {
     var queryURL =
