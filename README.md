@@ -6,7 +6,7 @@
 
 # Link to web site
 
-https://santiagohr2020.github.io/06-Server-Side-APIs-Weather-Dashboard/
+https://santiagohr2020.github.io/Server-Side-APIs-Weather-Dashboard/
 
 # Descrition
 
